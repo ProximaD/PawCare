@@ -7,22 +7,22 @@
 
 /*=================================== COLORS =======================================*/
 /*Color mode HSL (Hue, Saturation & Lightness)*/
---main-color: hsl(40, 80%, 55%);
---main-color-alt: hsl(40, 70%, 60%);
---main-color-light: hsl(40, 60%, 70%);
+--main-color: hsl(85, 100%, 87%);
+--main-color-alt: hsl(89, 100%, 71%);
+--main-color-light: hsl(100, 55%, 69%);
 
---title-color: hsl(40, 80%, 45%);
---text-color: hsl(40, 30%, 20%);
+--title-color: hsl(231, 100%, 50%);
+--text-color: hsl(100, 30%, 14%);
 
 --white-color: hsl(0, 0%, 100%);
 --black-color: hsl(0, 0%, 10%);
 
---body-color: hsl(40, 20%, 90%);
---container-color: hsl(40, 30%, 80%);
---shadow-image: hsl(40, 30%, 35%);
+--body-color: hsl(106, 100%, 93%);
+--container-color: hsl(106, 40%, 65%);
+--shadow-image: hsl(116, 30%, 35%);
 --gradient-card: linear-gradient(180deg,
-                                 rgb(239, 212, 159),
-                                 rgb(199, 199, 199));
+                                 rgb(137, 187, 115),
+                                 rgb(109, 160, 116));
 
 
 /*=================================== FONT & TYPOGRAPHY =======================================*/
