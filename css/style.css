@@ -1,0 +1,208 @@
+/*====================================================== GOOGLE FONT =======================================*/
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Elsie:wght@400;900&family=Italiana&family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,600;1,600&family=Outfit:wght@100..900&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Space+Grotesk:wght@600&display=swap');
+
+/*==================================== CSS VARIABLES =======================================*/
+:root{
+    --header-height: 3.5rem;
+
+/*=================================== COLORS =======================================*/
+/*Color mode HSL (Hue, Saturation & Lightness)*/
+--main-color: hsl(40, 80%, 55%);
+--main-color-alt: hsl(40, 70%, 60%);
+--main-color-light: hsl(40, 60%, 70%);
+
+--title-color: hsl(40, 80%, 45%);
+--text-color: hsl(40, 30%, 20%);
+
+--white-color: hsl(0, 0%, 100%);
+--black-color: hsl(0, 0%, 10%);
+
+--body-color: hsl(40, 20%, 90%);
+--container-color: hsl(40, 30%, 80%);
+--shadow-image: hsl(40, 30%, 35%);
+--gradient-card: linear-gradient(180deg,
+                                 rgb(239, 212, 159),
+                                 rgb(199, 199, 199));
+
+
+/*=================================== FONT & TYPOGRAPHY =======================================*/
+/* .5rem = 8px | 1rem = 16px ...*/
+--body-font: "Poppins", sans-serif;
+--biggest-font-size: 2.25rem;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size: .954rem;
+--small-font-size: .869rem;
+
+/*=================================== FONT WEIGHT =======================================*/
+--font-regular: 400;
+--font-semi-bold: 500;
+--font-bold: 700;
+
+/*=================================== Z INDEX =======================================*/
+--z-tooltip: 10;
+--z-fixed: 100;
+
+/*=================================== Responsive Typography =======================================*/
+@media screen and (min-width: 1150px){
+    :root{
+        --h1-font-size: 2.25rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+/*========================================= MARGINS ============================================*/
+    --mb-1: 1rem;
+    --mb-2: 1.5rem;
+    --mb-3: 2rem;
+    --mb-4: 2.5rem;
+  
+
+/*=================================== BASE =======================================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4{
+    color: var(--title-color);
+    font-family: var(--heading-font);
+    font-weight: var(--font-semi-bold);
+}
+
+.accent, .tagline{
+    font-family: var(--accent-font);
+    font-size: 1.5rem;
+    color: var(--title-color);
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*=================================== REUSABLE CSS CLASSES =======================================*/
+.container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding-block: 5rem 4rem;
+}
+
+.section__title{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main{
+    overflow: hidden;
+}
+
+/*=================================== HEADER & NAV =======================================*/
+
+
+/* Navigation for mobile devices */
+
+
+/* Show menu */
+
+
+
+/* Add shadow header */
+
+
+/* Active link */
+
+/*===================================== HOME ================================================= */
+
+
+/*===================================== BUTTON ================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
