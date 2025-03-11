@@ -1,5 +1,6 @@
 /*====================================================== GOOGLE FONT =======================================*/
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Elsie:wght@400;900&family=Italiana&family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,600;1,600&family=Outfit:wght@100..900&family=Poppins:wght@400;600;700&family=Roboto:wght@700&family=Space+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mako&family=Montserrat+Alternates:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /*==================================== CSS VARIABLES =======================================*/
 :root{
@@ -7,11 +8,11 @@
 
 /*=================================== COLORS =======================================*/
 /*Color mode HSL (Hue, Saturation & Lightness)*/
---main-color: hsl(85, 100%, 87%);
---main-color-alt: hsl(89, 100%, 71%);
---main-color-light: hsl(100, 55%, 69%);
+--main-color: hsl(231, 100%, 50%);
+--main-color-alt: hsl(231, 50%, 55%);
+--main-color-light: hsl(231, 25%, 57%);
 
---title-color: hsl(231, 100%, 50%);
+--title-color: hsl(85, 100%, 87%);
 --text-color: hsl(100, 30%, 14%);
 
 --white-color: hsl(0, 0%, 100%);
@@ -27,7 +28,8 @@
 
 /*=================================== FONT & TYPOGRAPHY =======================================*/
 /* .5rem = 8px | 1rem = 16px ...*/
---body-font: "Poppins", sans-serif;
+--body-font: "Mako", sans-serif;
+--accent-font: "Pacifico", cursive;
 --biggest-font-size: 2.25rem;
 --h1-font-size: 1.5rem;
 --h2-font-size: 1.25rem;
@@ -85,12 +87,6 @@ h1, h2, h3, h4{
     font-weight: var(--font-semi-bold);
 }
 
-.accent, .tagline{
-    font-family: var(--accent-font);
-    font-size: 1.5rem;
-    color: var(--title-color);
-}
-
 
 ul{
     list-style: none;
@@ -133,10 +129,56 @@ img{
 }
 
 /*=================================== HEADER & NAV =======================================*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    transition: box-shadow .4s;
+}
 
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo{
+    color: var(--main-color);
+    font-family: var(--accent-font);
+    font-weight: var(--font-semi-bold);
+    transition: color .4s;
+}
+
+.nav__logo:hover{
+    font-size: var(--h1-font-size);
+}
+
+.nav__toggle,
+.nav__close{
+    display: flex;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
 /* Navigation for mobile devices */
-
+@media screen and (max-width: 1150px){
+    .nav__menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--body-color);
+        width: 100%;
+        padding-block: 4rem;
+        box-shadow: 0 8px 16px hsla(166, 85%, .8%, .3);
+        transition: top .4s;
+    }
+}
 
 /* Show menu */
 
